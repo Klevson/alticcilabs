@@ -1,0 +1,13 @@
+<div>
+
+    <p>Search for List item for Index: 
+        <input type="number" [(ngModel)]="selectedIndex" placeholder="Enter/Select index" /> 
+        <button (click)="search()">Get Item</button> 
+    </p>
+    <div>
+        <h2>Selected index: {{selectedIndex}}</h2>
+        <h2 *ngIf="returnedItem >= 0">Returned index: {{returnedItem}}</h2>
+    </div>
+        
+
+</div>
